@@ -2,8 +2,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Typing Race</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
-	
+	<div class="enter-values">
+		<h1 class="welcome">Welcome to typing practice!</h1>
+		<h4>Enter the words you would like to practice typing:</h4>
+		<form>
+			<input id="word1" class="word" type="text" placeholder="word">
+			<input id="word2" class="word" type="text" placeholder="word">
+			<input id="word3" class="word" type="text" placeholder="word">
+			<input id="word4" class="word" type="text" placeholder="word">
+			<input id="word5" class="word" type="text" placeholder="word">
+			<br>
+			<br>
+			<h4>How many seconds should we put on the clock?</h4>
+			<input id="seconds" type="text" placeholder="seconds">
+			<br>
+			<input id="go" type="submit" value="START!">
+		</form>
+	</div>
+	<div class="game" style="visibility:hidden;">
+		<div class="hint">If you make a mistake, press the enter key for a new word.</div>
+		<div class="countdown"></div>
+		<div class="word-box"></div>
+		<div class="typed-box"></div>
+		<img class="versa" src="versa.png" alt="">
+		<div class="status"></div>
+		<div class="finish-line">finish line</div>
+		<div class="result"></div>
+	</div>
+	<div class="win-screen" style="visibility:hidden;">
+		<div class="win">YOU WIN!</div>
+		<div class="play-again">This should be a <strong>click to play again</strong> button, but I don't know how to do that...</div>
+	</div>
+	<div class="lose-screen" style="visibility:hidden;">
+		<div class="win">You lost :(</div>
+		<div class="play-again">This should be a "click to play again" button, but I don't know how to do that, so just refresh your browser :)</div>
+	</div>
 </body>
 </html>
